@@ -13,10 +13,10 @@
 
 ## The Challenge
 
-A new backend application is being built to spec by a crack team of coders out in orbit around Eros. You are part of that team, and your mission is to develop a UI where Eros leadership team can upload a PDF and manipulate its structure! They have a 100 page pdf that's order is out of wack. They need to edit, rearrange, and delete some pages in the pdf, so they can ask for more budget!
+A new backend application is being built to spec by a crack team of coders out in orbit around Eros. You are part of that team, and your mission is to develop a UI where Eros leadership team can upload a PDF and manipulate its structure! They have a 618 page pdf that's order is out of wack. They need to edit, rearrange, and delete some pages in the pdf, so they can ask for more budget!
 
 
-Clone this repo, create a branch, follow engineering best practices. Consider tests for any functions you write.
+Clone this repo, create a branch, follow engineering best practices. Consider tests for any functions you write. There is a sample pdf attached that can be used for testing (apollo 17 flight plan)
 
 
 ### 1. Add functionality to load a PDF
