@@ -25,3 +25,10 @@ Clone this repo, create a branch, follow engineering best practices. Consider te
 ### 2. Add functionality to rearrange PDF's pages.
 
 ### 3. Add functionality to delete pages.
+
+
+# Run the angular app
+- install node
+- npm install in the /pdf-editor directory
+- ng serve
+- open http://localhost:4200
