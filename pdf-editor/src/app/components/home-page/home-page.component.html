@@ -1,0 +1,6 @@
+<div fxLayout="row" fxLayoutAlign="center center" class="mb-3 p-home-page__upload-section">
+  <app-pdf-upload (fileUploaded)="selectedFile = $event"></app-pdf-upload>
+</div>
+<div fxLayout="row" fxLayoutAlign="center center" class="p-home-page__edit-section">
+  <app-pdf-edit [pdfFile]="selectedFile"></app-pdf-edit>
+</div>
