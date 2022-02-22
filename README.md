@@ -10,6 +10,7 @@
 - Please create a branch, perform your work there, push to GitHub and do not merge it.
   - We download and attempt to run your branch as part of the code review process.
 - We do not expect or require you to finish this challenge.
+- Please avoid using off the shelf products such as pdftron or pspdfkit
 
 ## The Challenge
 
