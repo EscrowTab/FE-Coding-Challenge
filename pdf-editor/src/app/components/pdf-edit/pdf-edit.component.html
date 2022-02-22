@@ -1,0 +1,30 @@
+<mat-card class="o-pdf-edit">
+  <mat-card-header>
+    <mat-card-title>PDF Editor</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div *ngIf="pdfFile; else noFileFound">
+      <p>Edit your PDF file below and export when complete!</p>
+
+      <ngx-extended-pdf-viewer
+        [src]="pdfFile"
+        [height]="'50vh'"
+        [showBorders]="true"
+        [scrollMode]="2"
+        [pageViewMode]="'multiple'"
+        [zoom]="20"
+        [useBrowserLocale]="true"
+      >
+      </ngx-extended-pdf-viewer>
+    </div>
+    <ng-template #noFileFound>
+      <p data-testid="o-pdf-edit__instructions">
+        Your PDF file will appear here after you've uploaded it above.
+      </p>
+    </ng-template>
+  </mat-card-content>
+  <mat-card-actions *ngIf="pdfFile" fxLayoutAlign="end">
+    <button mat-raised-button color="primary" (click)="openRearrangeModal()">Rearrange Pages</button>
+    <button mat-raised-button color="primary" (click)="openDeletePageModal()">Delete Pages</button>
+  </mat-card-actions>
+</mat-card>

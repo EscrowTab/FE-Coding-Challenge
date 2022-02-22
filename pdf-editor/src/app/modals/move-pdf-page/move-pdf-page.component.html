@@ -1,0 +1,25 @@
+
+<div>
+  <mat-dialog-content>
+    <!-- TODO move this content to a re-usable component -->
+    <mat-form-field fxLayout="row">
+      <mat-label>Start Page</mat-label>
+      <input matInput type="number" [formControl]="startPageFormControl">
+    </mat-form-field>
+    <mat-form-field fxLayout="row">
+      <mat-label>How many pages to move?</mat-label>
+      <input matInput type="number" [max]="pageCount" [formControl]="pagesToMove">
+    </mat-form-field>
+    <mat-form-field fxLayout="row">
+      <mat-label>To before Page</mat-label>
+      <input matInput type="number" [max]="pageCount" [formControl]="newLocationFormControl">
+    </mat-form-field>
+    <mat-hint fxLayout="row">Total pages ({{pageCount}})</mat-hint>
+    <mat-hint fxLayout="row"> Will move pages {{getPageList()}} to location {{newLocation}} upon save. </mat-hint>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button mat-button color="warn" (click)="close()">Cancel</button>
+    <button mat-button (click)="close(true)">Save Changes</button>
+  </mat-dialog-actions>
+
+</div>
